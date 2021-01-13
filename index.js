@@ -25,7 +25,7 @@ function send(){
 		console.log(contador);
 		setTimeout(function(){
 			send();
-		}, getRndInteger(10000, 25000));
+		}, getRndInteger(20000, 40000));
 	});
 }
 send();
