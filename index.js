@@ -20,12 +20,12 @@ function getRndInteger(min, max) {
 }
 
 function send(){
-	request('http://new.dataesy.com/insta/send.php', function (error, response, body) {
+	request('http://planetumcodes.tech/insta/send.php', function (error, response, body) {
 		contador++;
 		console.log(contador);
 		setTimeout(function(){
 			send();
-		}, getRndInteger(12000, 17000));
+		}, getRndInteger(10000, 17000));
 	});
 }
 send();
